@@ -1,0 +1,37 @@
+# Environment
+.env
+.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+venv/
+.venv/
+
+# Data
+data/raw/
+data/processed/
+
+# Model artifacts
+models/
+
+# Submission
+submission/
+
+# Logs
+logs/
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+notebooks/
+
+# Testing
+.pytest_cache/
