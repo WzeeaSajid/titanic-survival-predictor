@@ -22,7 +22,7 @@
     --coral: #D85A30;
     --coral-dark: #993C1D;
     --water: #2E7FC1;
-    --control-h: clamp(46px, 4vw, 54px);
+    --control-h: clamp(38px, 3.5vw, 46px);
     --survive-color: #4FD1A5;
     --perish-color: #F0997B;
   }
@@ -40,7 +40,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: clamp(12px, 3vw, 32px);
+    padding: clamp(8px, 2vw, 20px);
     background-image:
       radial-gradient(circle at 20% 15%, rgba(255,255,255,0.03), transparent 40%),
       radial-gradient(circle at 85% 85%, rgba(255,255,255,0.025), transparent 45%);
@@ -48,7 +48,7 @@
 
   .page {
     width: 100%;
-    max-width: 1200px;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,13 +62,13 @@
     align-items: flex-end;
     flex-wrap: wrap;
     gap: 12px;
-    margin-bottom: clamp(20px, 3vw, 36px);
+    margin-bottom: clamp(12px, 2vw, 24px);
   }
 
   h1 {
     font-family: 'Cinzel', serif;
     font-weight: 600;
-    font-size: clamp(36px, 5.5vw, 60px);
+    font-size: clamp(24px, 4vw, 40px);
     letter-spacing: 0.01em;
     color: var(--ivory);
     margin-top: 8px;
@@ -112,10 +112,10 @@
   }
 
   .fields {
-    padding: clamp(32px, 4vw, 56px);
+    padding: clamp(20px, 3vw, 36px);
     display: flex;
     flex-direction: column;
-    gap: clamp(20px, 2.5vw, 30px);
+    gap: clamp(14px, 2vw, 22px);
   }
 
   .field-label {
@@ -182,7 +182,7 @@
   }
   input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 24px; height: 24px;
+    width: 20px; height: 20px;
     border-radius: 50%;
     background: var(--brass);
     border: 3px solid var(--ivory);
@@ -190,7 +190,7 @@
     cursor: pointer;
   }
   input[type="range"]::-moz-range-thumb {
-    width: 24px; height: 24px;
+    width: 20px; height: 20px;
     border-radius: 50%;
     background: var(--brass);
     border: 3px solid var(--ivory);
@@ -242,7 +242,7 @@
   .modal-pct {
     font-family: 'Space Mono', monospace;
     font-weight: 700;
-    font-size: clamp(56px, 8vw, 80px);
+    font-size: clamp(40px, 6vw, 56px);
     line-height: 1;
     margin-bottom: 8px;
   }
