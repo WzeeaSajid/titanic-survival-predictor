@@ -439,6 +439,12 @@ document.querySelectorAll('#sexGroup button').forEach(b => b.addEventListener('c
 document.getElementById('age').addEventListener('input', e => { state.age = Number(e.target.value); document.getElementById('ageOut').textContent = state.age; });
 document.getElementById('fare').addEventListener('input', e => { state.fare = Number(e.target.value); document.getElementById('fareOut').textContent = '\u00a3' + state.fare; });
 document.getElementById('embarked').addEventListener('change', e => { state.embarked = e.target.value; });
+const numFocus = id => { const el = document.getElementById(id); if (el.value === '0') el.value = ''; };
+const numBlur = (id, key) => { const el = document.getElementById(id); if (!el.value) el.value = '0'; state[key] = Number(el.value); };
+document.getElementById('sibsp').addEventListener('focus', () => numFocus('sibsp'));
+document.getElementById('sibsp').addEventListener('blur', () => numBlur('sibsp', 'sibsp'));
+document.getElementById('parch').addEventListener('focus', () => numFocus('parch'));
+document.getElementById('parch').addEventListener('blur', () => numBlur('parch', 'parch'));
 document.getElementById('sibsp').addEventListener('input', e => { state.sibsp = Number(e.target.value) || 0; });
 document.getElementById('parch').addEventListener('input', e => { state.parch = Number(e.target.value) || 0; });
 
