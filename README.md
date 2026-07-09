@@ -4,8 +4,8 @@ Predicts whether a Titanic passenger would have survived using a Random Forest m
 
 ## Live Demo
 
-- **Frontend** — period-themed UI served at `http://localhost:8000`
-- **API docs** — Swagger UI at `http://localhost:8000/docs`
+- **Frontend** — http://13.60.22.65:8000
+- **API docs** — http://13.60.22.65:8000/docs
 
 ## Model Performance
 
