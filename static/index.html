@@ -445,8 +445,16 @@ document.getElementById('sibsp').addEventListener('focus', () => numFocus('sibsp
 document.getElementById('sibsp').addEventListener('blur', () => numBlur('sibsp', 'sibsp'));
 document.getElementById('parch').addEventListener('focus', () => numFocus('parch'));
 document.getElementById('parch').addEventListener('blur', () => numBlur('parch', 'parch'));
-document.getElementById('sibsp').addEventListener('input', e => { state.sibsp = Number(e.target.value) || 0; });
-document.getElementById('parch').addEventListener('input', e => { state.parch = Number(e.target.value) || 0; });
+document.getElementById('sibsp').addEventListener('input', e => {
+  let v = Math.min(8, Math.max(0, Number(e.target.value) || 0));
+  e.target.value = v;
+  state.sibsp = v;
+});
+document.getElementById('parch').addEventListener('input', e => {
+  let v = Math.min(6, Math.max(0, Number(e.target.value) || 0));
+  e.target.value = v;
+  state.parch = v;
+});
 
 function closeModal(){
   document.getElementById('modalOverlay').classList.remove('open');
