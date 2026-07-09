@@ -1,6 +1,5 @@
 # Environment
 .env
-.env.example
 
 # Python
 __pycache__/
@@ -16,8 +15,8 @@ venv/
 data/raw/
 data/processed/
 
-# Model artifacts
-models/
+# Model artifacts (committed for EC2 deployment)
+# models/
 
 # Submission
 submission/

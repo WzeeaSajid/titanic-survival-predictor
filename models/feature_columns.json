@@ -1,0 +1,20 @@
+{
+  "numeric": [
+    "Age",
+    "Fare",
+    "FarePerPerson",
+    "IsAlone",
+    "CabinKnown",
+    "IsChild",
+    "IsMother"
+  ],
+  "categorical": [
+    "Pclass",
+    "Sex",
+    "Embarked",
+    "Title",
+    "Deck",
+    "FamilyCategory",
+    "TicketPrefix"
+  ]
+}

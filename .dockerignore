@@ -10,6 +10,7 @@ build/
 
 # Data — never bake raw data into the image
 data/raw/
+data/Titanic-Dataset.csv
 notebooks/
 
 # Git
@@ -19,9 +20,9 @@ notebooks/
 # Tests
 tests/
 
-# Local env (we copy .env explicitly in Dockerfile)
-# Remove this line if you want .env excluded and use AWS env vars instead
-# .env
+# Local env
+.env
+.env.example
 
 # Submission
 submission/
